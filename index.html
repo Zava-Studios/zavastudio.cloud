@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zava — Ciberseguridad e Inteligencia Artificial. Soluciones técnicas de vanguardia desarrolladas por estudiantes especializados de la UMA.">
+  <title>Zava · Ciberseguridad & IA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <canvas id="canvas-bg" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Zava — inicio">
+        <span class="nav-logo-mark" aria-hidden="true">ZV</span>
+        Zava
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="btn-nav">Hablar con nosotros</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" aria-label="Presentación">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <span class="hero-badge">Estudiantes UMA · Ciberseguridad &amp; IA</span>
+
+          <h1 class="hero-title">
+            Seguridad que<br>
+            <em>piensa</em> por ti
+          </h1>
+
+          <p class="hero-lead">
+            Cuatro estudiantes de Ciberseguridad e Inteligencia Artificial de la Universidad de Málaga. Construimos sistemas que detectan amenazas, automatizan defensa y aprenden de cada ataque.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#servicios" class="btn-primary">Ver servicios</a>
+            <a href="#proyectos" class="btn-secondary">Nuestros proyectos</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Estadísticas">
+            <div>
+              <span class="hero-stat-num">4</span>
+              <span class="hero-stat-label">Especialistas</span>
+            </div>
+            <div>
+              <span class="hero-stat-num">6+</span>
+              <span class="hero-stat-label">Proyectos activos</span>
+            </div>
+            <div>
+              <span class="hero-stat-num">UMA</span>
+              <span class="hero-stat-label">Universidad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title">zava@sec ~ audit.sh</span>
+            </div>
+            <div class="terminal-body">
+              <span class="terminal-line" data-delay="0.2">
+                <span class="terminal-prompt">zava@sec</span><span class="terminal-cmd"> $ ./scan --target network</span>
+              </span>
+              <span class="terminal-line" data-delay="0.6">
+                <span class="terminal-out">▸ Iniciando análisis de superficie...</span>
+              </span>
+              <span class="terminal-line" data-delay="1.0">
+                <span class="terminal-out">▸ 1.204 hosts encontrados</span>
+              </span>
+              <span class="terminal-line" data-delay="1.4">
+                <span class="terminal-out">▸ CVE-2024-3094 · CRÍTICO detectado</span>
+              </span>
+              <span class="terminal-line" data-delay="1.8">
+                <span class="terminal-comment"># Modelo ML clasificando amenazas...</span>
+              </span>
+              <span class="terminal-line" data-delay="2.2">
+                <span class="terminal-out">▸ Informe generado en report.pdf</span>
+              </span>
+              <span class="terminal-line" data-delay="2.6">
+                <span class="terminal-prompt">zava@sec</span><span class="terminal-cmd"> $ _</span><span class="terminal-cursor"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="scroll-hint" aria-hidden="true">
+          <div class="scroll-hint-line"></div>
+          <span>Explorar</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" aria-labelledby="servicios-titulo">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker reveal">Lo que hacemos</span>
+          <h2 class="section-title reveal reveal-delay-1" id="servicios-titulo">
+            Servicios <em>especializados</em>
+          </h2>
+          <div class="section-divider reveal reveal-delay-2"></div>
+          <p class="section-lead reveal reveal-delay-2">
+            Combinamos conocimientos en ciberseguridad ofensiva y defensiva con modelos de inteligencia artificial para construir soluciones que escalan.
+          </p>
+        </header>
+
+        <div class="grid-3">
+          <article class="service-card reveal reveal-delay-1">
+            <div class="service-icon" aria-hidden="true">🔍</div>
+            <h3>Análisis de vulnerabilidades</h3>
+            <p>
+              Auditorías técnicas de sistemas, redes y aplicaciones web. Identificamos vectores de ataque antes de que lo haga alguien con malas intenciones. Entregamos informe ejecutivo y técnico.
+            </p>
+            <div class="service-tags">
+              <span class="tag">Pentesting</span>
+              <span class="tag">OWASP</span>
+              <span class="tag">CVE</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal reveal-delay-2">
+            <div class="service-icon" aria-hidden="true">🤖</div>
+            <h3>Detección de amenazas con IA</h3>
+            <p>
+              Modelos de machine learning entrenados para identificar patrones de ataque en tiempo real: anomalías de red, comportamiento malicioso y exfiltración de datos.
+            </p>
+            <div class="service-tags">
+              <span class="tag">ML</span>
+              <span class="tag">SIEM</span>
+              <span class="tag">IDS/IPS</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal reveal-delay-3">
+            <div class="service-icon" aria-hidden="true">🛡️</div>
+            <h3>Hardening y bastionado</h3>
+            <p>
+              Configuración segura de servidores, contenedores y entornos cloud siguiendo benchmarks CIS y NIST. Reducimos la superficie de ataque sin sacrificar operatividad.
+            </p>
+            <div class="service-tags">
+              <span class="tag">CIS</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Cloud</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal reveal-delay-1">
+            <div class="service-icon" aria-hidden="true">🔐</div>
+            <h3>Criptografía aplicada</h3>
+            <p>
+              Implementación de protocolos criptográficos modernos: TLS, cifrado de extremo a extremo, gestión de claves y diseño de sistemas de autenticación robustos.
+            </p>
+            <div class="service-tags">
+              <span class="tag">TLS 1.3</span>
+              <span class="tag">PKI</span>
+              <span class="tag">Zero-Trust</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal reveal-delay-2">
+            <div class="service-icon" aria-hidden="true">📊</div>
+            <h3>Desarrollo de modelos IA</h3>
+            <p>
+              Diseño y entrenamiento de modelos para casos de uso en seguridad: clasificación de malware, análisis forense automatizado y procesamiento de logs a gran escala.
+            </p>
+            <div class="service-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Forense</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal reveal-delay-3">
+            <div class="service-icon" aria-hidden="true">⚡</div>
+            <h3>Respuesta a incidentes</h3>
+            <p>
+              Protocolo de contención, análisis forense y recuperación ante brechas de seguridad. Documentamos el vector de ataque y proponemos medidas estructurales de mejora.
+            </p>
+            <div class="service-tags">
+              <span class="tag">DFIR</span>
+              <span class="tag">Forense</span>
+              <span class="tag">Recovery</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section id="equipo" aria-labelledby="equipo-titulo">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker reveal">Quiénes somos</span>
+          <h2 class="section-title reveal reveal-delay-1" id="equipo-titulo">
+            El <em>equipo</em>
+          </h2>
+          <div class="section-divider reveal reveal-delay-2"></div>
+          <p class="section-lead reveal reveal-delay-2">
+            Cuatro estudiantes del grado en Ciberseguridad e Inteligencia Artificial de la Universidad de Málaga, con especialidades complementarias y un objetivo común.
+          </p>
+        </header>
+
+        <div class="grid-4">
+          <article class="team-card reveal reveal-delay-1">
+            <div class="team-avatar" aria-hidden="true">ZV</div>
+            <h3>Zava · Miembro</h3>
+            <span class="team-role">Seguridad Ofensiva</span>
+            <p>Especializado en pentesting web y análisis de vulnerabilidades. Competidor en CTFs nacionales.</p>
+          </article>
+
+          <article class="team-card reveal reveal-delay-2">
+            <div class="team-avatar" aria-hidden="true">ZV</div>
+            <h3>Zava · Miembro</h3>
+            <span class="team-role">Machine Learning</span>
+            <p>Desarrolla modelos de detección de amenazas y análisis de comportamiento anómalo en redes.</p>
+          </article>
+
+          <article class="team-card reveal reveal-delay-3">
+            <div class="team-avatar" aria-hidden="true">ZV</div>
+            <h3>Zava · Miembro</h3>
+            <span class="team-role">Seguridad Defensiva</span>
+            <p>Experto en arquitecturas Zero-Trust, bastionado de sistemas y diseño de políticas de seguridad.</p>
+          </article>
+
+          <article class="team-card reveal reveal-delay-4">
+            <div class="team-avatar" aria-hidden="true">ZV</div>
+            <h3>Zava · Miembro</h3>
+            <span class="team-role">Criptografía & Redes</span>
+            <p>Investigación en protocolos criptográficos modernos y seguridad en entornos de red complejos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section id="tecnologias" aria-labelledby="tech-titulo">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker reveal">Stack técnico</span>
+          <h2 class="section-title reveal reveal-delay-1" id="tech-titulo">
+            Tecnologías con las que <em>trabajamos</em>
+          </h2>
+        </header>
+        <div class="tech-grid reveal reveal-delay-2">
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Python</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>PyTorch</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>TensorFlow</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Metasploit</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Burp Suite</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Wireshark</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Nmap / Nessus</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Docker</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Linux</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Kali Linux</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Elasticsearch</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Splunk</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Snort / Suricata</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>OpenSSL</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>AWS Security</span>
+          <span class="tech-badge"><span class="tech-dot" aria-hidden="true"></span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" aria-labelledby="proyectos-titulo">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker reveal">Portfolio</span>
+          <h2 class="section-title reveal reveal-delay-1" id="proyectos-titulo">
+            Proyectos <em>destacados</em>
+          </h2>
+          <div class="section-divider reveal reveal-delay-2"></div>
+          <p class="section-lead reveal reveal-delay-2">
+            Trabajo real, técnico y documentado. Cada proyecto nace de un problema concreto y termina con resultados medibles.
+          </p>
+        </header>
+
+        <div class="grid-2">
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-card-header">
+              <div>
+                <h3>SentinelNet</h3>
+                <span class="tag">Detección de intrusiones · ML</span>
+              </div>
+              <span class="project-status activo">Activo</span>
+            </div>
+            <div class="project-card-body">
+              <p>
+                Sistema de detección de intrusiones basado en redes neuronales recurrentes. Analiza tráfico de red en tiempo real y clasifica ataques con una precisión superior al 94%. Entrenado sobre el dataset NSL-KDD y validado en entornos reales.
+              </p>
+              <div class="service-tags">
+                <span class="tag">Python</span>
+                <span class="tag">LSTM</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Wireshark</span>
+              </div>
+              <div class="project-meta">
+                <span>↳ 94.3% precisión</span>
+                <span>↳ 12 tipos de ataque</span>
+                <span>↳ Tiempo real</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-card-header">
+              <div>
+                <h3>PhishGuard</h3>
+                <span class="tag">Anti-phishing · NLP</span>
+              </div>
+              <span class="project-status activo">Activo</span>
+            </div>
+            <div class="project-card-body">
+              <p>
+                Extensión de navegador con modelo NLP para detección de páginas de phishing. Analiza URL, contenido DOM y certificados TLS para emitir un veredicto en menos de 200 ms. Integrado con feeds de inteligencia de amenazas.
+              </p>
+              <div class="service-tags">
+                <span class="tag">BERT</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Chrome API</span>
+                <span class="tag">TLS</span>
+              </div>
+              <div class="project-meta">
+                <span>↳ &lt;200 ms latencia</span>
+                <span>↳ 97% recall</span>
+                <span>↳ Browser extension</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-card-header">
+              <div>
+                <h3>VaultSec</h3>
+                <span class="tag">Gestión de credenciales · Cripto</span>
+              </div>
+              <span class="project-status desarrollo">En desarrollo</span>
+            </div>
+            <div class="project-card-body">
+              <p>
+                Gestor de contraseñas de código abierto con cifrado AES-256-GCM y derivación de clave con Argon2id. Arquitectura zero-knowledge: el servidor nunca tiene acceso a los secretos del usuario.
+              </p>
+              <div class="service-tags">
+                <span class="tag">Rust</span>
+                <span class="tag">AES-256</span>
+                <span class="tag">Argon2id</span>
+                <span class="tag">Zero-Knowledge</span>
+              </div>
+              <div class="project-meta">
+                <span>↳ Zero-knowledge</span>
+                <span>↳ Open source</span>
+                <span>↳ Q3 2025</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-card-header">
+              <div>
+                <h3>MalwareScope</h3>
+                <span class="tag">Análisis estático · IA</span>
+              </div>
+              <span class="project-status desarrollo">En desarrollo</span>
+            </div>
+            <div class="project-card-body">
+              <p>
+                Plataforma de análisis estático y dinámico de binarios. Extrae características de PE headers, strings y grafos de llamadas; un clasificador entrenado sobre 80.000 muestras etiquetadas lo categoriza en familia de malware.
+              </p>
+              <div class="service-tags">
+                <span class="tag">Python</span>
+                <span class="tag">YARA</span>
+                <span class="tag">GNN</span>
+                <span class="tag">Sandbox</span>
+              </div>
+              <div class="project-meta">
+                <span>↳ 80k muestras</span>
+                <span>↳ 18 familias</span>
+                <span>↳ Sandboxed</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" aria-labelledby="contacto-titulo">
+      <div class="container">
+        <div class="split">
+          <div class="contact-info reveal">
+            <span class="section-kicker">Contacto</span>
+            <h2 id="contacto-titulo">
+              Hablemos de tu <em>proyecto</em>
+            </h2>
+            <p>
+              Tanto si necesitas una auditoría puntual como si buscas un equipo técnico para un desarrollo a medio plazo, escríbenos. Respondemos en menos de 48 horas.
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">✉</div>
+              <div class="contact-item-text">
+                <strong>Email</strong>
+                <a href="mailto:infozavastudios@gmail.com">infozavastudios@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📞</div>
+              <div class="contact-item-text">
+                <strong>Teléfono</strong>
+                <a href="tel:+34603635119">+34 603 635 119</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📍</div>
+              <div class="contact-item-text">
+                <strong>Ubicación</strong>
+                <span>Málaga, España · UMA</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">⏱</div>
+              <div class="contact-item-text">
+                <strong>Tiempo de respuesta</strong>
+                <span>Menos de 48 horas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal reveal-delay-2">
+            <form id="form-contacto" novalidate aria-label="Formulario de contacto">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre">
+                <span class="form-error" id="error-nombre" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email-contacto">Email</label>
+                <input type="email" id="email-contacto" name="email" autocomplete="email" placeholder="tu@email.com">
+                <span class="form-error" id="error-email-contacto" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="asunto">Tipo de consulta</label>
+                <select id="asunto" name="asunto">
+                  <option value="">Selecciona una opción</option>
+                  <option value="auditoria">Auditoría de seguridad</option>
+                  <option value="ia">Desarrollo con IA</option>
+                  <option value="consultoria">Consultoría técnica</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Describe brevemente tu proyecto o necesidad..."></textarea>
+                <span class="form-error" id="error-mensaje" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn-primary">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="nav-logo-mark" aria-hidden="true">ZV</span>
+            Zava
+          </div>
+          <p>
+            Proyecto de empresa formado por cuatro estudiantes de Ciberseguridad e IA de la Universidad de Málaga. Seguridad técnica, sin rodeos.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Análisis de vulnerabilidades</a></li>
+            <li><a href="#servicios">Detección con IA</a></li>
+            <li><a href="#servicios">Hardening</a></li>
+            <li><a href="#servicios">Criptografía</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#equipo">El equipo</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="#contacto">Formulario</a></li>
+            <li><a href="mailto:infozavastudios@gmail.com">infozavastudios@gmail.com</a></li>
+            <li><a href="tel:+34603635119">+34 603 635 119</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Zava · Todos los derechos reservados</p>
+        <p>Ciberseguridad &amp; Inteligencia Artificial · UMA · Málaga</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST -->
+  <div id="toast" role="status" aria-live="polite" aria-atomic="true">
+    <span class="toast-icon">✓</span>
+    <span class="toast-msg"></span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/scene.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+  <script src="js/forms.js" defer></script>
+
+</body>
+</html>
